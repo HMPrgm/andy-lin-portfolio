@@ -1,9 +1,15 @@
-import Project from "../interfaces/project";
-export default function Home({projects}:{projects:Project[]}) {
+import HomeSideBar from "./home_sidebar/home_sidebar";
+import ProjectGallery from "./project_gallery/project_gallery";
+export default function Home() {
 
   return (
-    <div>
-        {projects.map(p => <div key={p.id}>{p.title}</div>)}
+    <div className="flex justify-start gap-32 p-12">
+        <div>
+            <HomeSideBar/>
+        </div>
+        <div className="">
+            <ProjectGallery/>
+        </div>
     </div>
   );
 }

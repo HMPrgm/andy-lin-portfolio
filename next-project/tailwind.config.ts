@@ -9,9 +9,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        light: "#ffffff",
+        dark:"#000000"
       },
+      fontFamily: {
+        montserrat: ['var(--font-montserrat)'],
+        openSans:['var(--font-open-sans)']
+      }
     },
   },
   plugins: [],
